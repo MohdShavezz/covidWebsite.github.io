@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                 
+<script type="text/javascript">
+    window.onload = function () {
+    var c = new CanvasJS.Chart("first", {
+    title:{
+    text: "Today's Statics of COVID-19"
+    },
+    data: [
+    {
+    type: "column",
+    dataPoints: [
+    { label: "Active",  y: 233  },
+    { label: "Death", y: 62  },
+    { label: "Confirmed", y: 26 },
+    { label: "Recoverd", y: 99  },
+    
+    ] }
+    ] });
+    c.render();
+    }
+    </script>
+    <div id="first" style="height: 302px; width: 103%;"></div>
+</body>
+</html>
